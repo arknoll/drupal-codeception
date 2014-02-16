@@ -1,4 +1,4 @@
-Skeleton Cookbook
+drupal-codeception
 =================
 
 This is a testable skeleton cookbook designed for you or your organization to
@@ -73,3 +73,4 @@ We welcome contributed improvements and bug fixes via the usual workflow:
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new pull request
+
