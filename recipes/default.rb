@@ -22,8 +22,10 @@ log "replace this with a meaningful resource"
 directory node[:codeception][:dir] do
   owner node[:codeception][:user]
   group node[:codeception][:group]
-  mode 0775
+  mode 00755
+  action :create
   recursive true
+  not_if { ::File.exists?(node[:codeception][:dir]) }
 end
 
 remote_file "#{node[:codeception][:dir]}/codecept.phar" do
