@@ -18,20 +18,22 @@ Requirements
 
 Attributes
 ----------
-
-*List attributes here*
-
+````
+default['codecpetion']['dir']   = '/assets'
+default['codecpetion']['user'] = "www-data"
+default['codecpetion']['group'] = "www-data"
+default['codecpetion']['source'] = "http://codeception.com/codecept.phar"
+````
 Recipes
 -------
 
-### skeleton::default
+### drupal-codeception::default
 
-*Explain what the recipe does here*
 
 Testing
 -------
 
-[![Build Status](https://travis-ci.org/mlafeldt/skeleton-cookbook.png?branch=master)](https://travis-ci.org/mlafeldt/skeleton-cookbook)
+[![Build Status](https://travis-ci.org/arknoll/drupal-codeception.png?branch=master)](https://travis-ci.org/arknoll/drupal-codeception)
 
 The cookbook provides the following Rake tasks for testing:
 
@@ -47,9 +49,9 @@ The cookbook provides the following Rake tasks for testing:
 License and Author
 ------------------
 
-Author:: YOUR_NAME (YOUR_EMAIL)
+Author:: Alex Knoll (Alex@AlexKnoll.com)
 
-Copyright:: YEAR, YOUR_NAME
+Copyright:: 2014, Alex Knoll
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
