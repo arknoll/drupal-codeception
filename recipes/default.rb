@@ -19,14 +19,14 @@
 
 log "replace this with a meaningful resource"
 
-directory node[:codecpetion][:dir] do
-  owner node[:codecpetion][:user]
-  group node[:codecpetion][:group]
+directory node[:codeception][:dir] do
+  owner node[:codeception][:user]
+  group node[:codeception][:group]
   mode 0775
   recursive true
 end
 
-remote_file "#{node['codeception']['dir']}/codecept.phar" do
+remote_file "#{node[:codeception][:dir]}/codecept.phar" do
   source node[:codeception][:source]
   action :create_if_missing
 end
