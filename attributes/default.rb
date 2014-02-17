@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-default['codecpetion']['dir']   = '/assets'
-default['codecpetion']['user'] = "www-data"
-default['codecpetion']['group'] = "www-data"
-default['codecpetion']['source'] = "http://codeception.com/codecept.phar"
+default[:codecpetion][:dir]   = "/assets"
+default[:codecpetion][:user] = "www-data"
+default[:codecpetion][:group] = "www-data"
+default[:codecpetion][:source] = "http://codeception.com/codecept.phar"
