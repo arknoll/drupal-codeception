@@ -19,9 +19,9 @@
 
 log "replace this with a meaningful resource"
 
-directory node['codecpetion']['dir'] do
-  owner node['codecpetion']['user']
-  group node['codecpetion']['group']
+directory node[:codecpetion][:dir] do
+  owner node[:codecpetion][:user]
+  group node[:codecpetion][:group]
   mode 0775
   recursive true
 end
@@ -32,7 +32,7 @@ remote_file "{node[:codeception][:dir]}/codecept.phar" do
 end
 
 bash "Install Codeception" do
-  cwd node['codeception']['dir']
+  cwd node[:codeception][:dir]
   code <<-EOH
     php codecept.phar bootstrap
   EOH
