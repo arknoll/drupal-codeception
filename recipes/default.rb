@@ -30,7 +30,6 @@ end
 
 remote_file "#{node[:codeception][:dir]}/codecept.phar" do
   source node[:codeception][:source]
-  headers "Host" => URI.parse(source.first).host
   action :create
 end
 
