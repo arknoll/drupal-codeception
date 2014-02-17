@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-default[:codeception][:dir]   = "/assets"
+default[:codeception][:dir]   = "/assets/codeception"
 default[:codeception][:user] = "www-data"
 default[:codeception][:group] = "www-data"
 default[:codeception][:source] = "http://codeception.com/codecept.phar"
